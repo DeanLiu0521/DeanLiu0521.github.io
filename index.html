@@ -200,7 +200,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -210,7 +210,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -253,6 +253,138 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://haoyangliu.com/2017/07/15/如何学习SQL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/15/如何学习SQL/" itemprop="url">如何学习SQL</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-15T15:27:56-04:00">
+                2017-07-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>作者：数据分析狮<br>链接：<a href="https://www.zhihu.com/question/19552975/answer/123523074" target="_blank" rel="external">https://www.zhihu.com/question/19552975/answer/123523074</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>首先，sql是所有数据库查询的语言，sql由于本身结构化的特点，非常容易入手。针对不同的数据库，如hivesql、mysql、sqlserver、oracle等，sql语法会有所不同，但是总体上大同小异，只是细微处的差别。如果你是数据库小白，可以先补一下数据库知识；</p>
+<p>如果你有数据库基础的，只需要找些sql查询的习题来做一下，就会很快的得到提高；</p>
+<p>接着你想提高sql水平，进阶，就要学习一些比较高级的用法和技巧。</p>
+<p>1、数据库基础</p>
+<p><a href="http://blog.csdn.net/yutianzuijin/article/details/12243751" target="_blank" rel="external">数据库基础知识复习</a></p>
+<p>其实这篇文章讲的就是所有要点，可以有针对性的了解不熟悉的。不太明白的就直接找一本《数据库原理》看看，大概5小时。</p>
+<p>2、sql习题经典</p>
+<p><a href="http://blog.csdn.net/qaz13177_58_/article/details/5575711/" target="_blank" rel="external">SQL练习题</a></p>
+<p><a href="https://link.zhihu.com/?target=http%3A//blog.csdn.net/friendan/article/details/8072668" target="_blank" rel="external">SQL查询语句练习题27道</a></p>
+<p>可以自己搜索sql习题来实践，这里推荐2个习题。大概10小时就可以掌握。</p>
+<p>3、sql进阶</p>
+<p>（1）sql执行顺序。当sql逻辑复杂后，sql的执行顺序就会非常重要。<a href="https://link.zhihu.com/?target=http%3A//www.cnblogs.com/qanholas/archive/2010/10/24/1859924.html" target="_blank" rel="external">sql执行顺序 - qanholas</a></p>
+<p>（2）SQL ROW_NUMBER() OVER函数。用作分组排序，比如各个省份税收排名前20的企业。</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//www.cnblogs.com/gy51Testing/archive/2012/07/26/2609832.html" target="_blank" rel="external">SQL ROW_NUMBER() OVER函数的基本用法用法</a></p>
+<p>（3）case when then else end。用作条件判断，比如将10、11、12、13……19、20岁的人群新生成一个字段‘年龄段’取值为10-20岁；聚合函数分别计算，如sum(case when 性别=‘男’<br>then 收入 end) as 收入<em>男，sum(case when 性别=‘n女’<br>then 收入 end) as 收入</em>女</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//lj.soft.blog.163.com/blog/static/7940248120109215191358/" target="_blank" rel="external">SQL中的case when then else end用法</a></p>
+<p>（4）select时加标签。例如select出某一特征user_id时新建一个tag字段作为用户的标签。select user_id,’白领’ as tag</p>
+<p>（5）差集运算。例如取A集合中不包含在B集合的用户，做差集。</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//blog.csdn.net/dr_guo/article/details/51182626" target="_blank" rel="external">Hive差集运算详解</a></p>
+<p>进阶技巧和方法是在平常使用中逐步积累的，这里只举出几个常用的。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://haoyangliu.com/2017/07/07/对一些概念的理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -282,7 +414,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-07T01:13:29-04:00">
                 2017-07-07
@@ -394,7 +526,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-19T23:14:28-04:00">
                 2017-05-19
@@ -508,7 +640,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-19T05:20:00-04:00">
                 2017-05-19
@@ -635,8 +767,8 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -690,7 +822,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
